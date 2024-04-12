@@ -1,14 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import "./output.css"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import Navbar from './pages/Navbar.jsx'
+import Home from './pages/Home.jsx'
+import Dragdrop from './pages/drag&drop/dragdrop.jsx'
+import Card from "./pages/Card.jsx"
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        hello pranav bhai
-      </div>
+      {/* <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/login" element={<Login />}></Route>
+          <Route path="/explore" element={<Dragdrop />}></Route>
+          </Routes>
+      </Router> */}
+      <Navbar/>
+      {/* <Home/> */}
+      {/* <Card/> */}
+      <Dragdrop/>
     </>
   )
 }

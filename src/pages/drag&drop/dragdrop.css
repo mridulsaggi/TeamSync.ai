@@ -1,0 +1,13 @@
+.dragdrop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40rem;
+}
+.drag{
+    display: flex;
+    justify-content: center;
+    /* grid-template-rows: 1rem 1rem; */
+    /* column-gap: 2rem; */
+    /* row-gap: 2rem; */
+}

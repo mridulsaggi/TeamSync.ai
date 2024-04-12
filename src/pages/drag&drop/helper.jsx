@@ -5,28 +5,20 @@ import { useDrop } from 'react-dnd';
 const images = [
     {
         id: 1,
-        url: "https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630"
+        url: "./pp.png"
     },
     {
         id: 2,
-        url: "https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg"
+        url: "2.png"
     },
     {
         id: 3,
-        url: "https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630"
+        url: "1.png"
     },
     {
         id: 4,
-        url: "https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg"
+        url: "sync.jpg"
     },
-    {
-        id: 3,
-        url: "https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630"
-    },
-    {
-        id: 4,
-        url: "https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg"
-    }
 ];
 
 
@@ -46,25 +38,32 @@ const Helper = () => {
     return (
         <>
             <div className="dragdrophai">
-            <div ref={drop} className='boardhai' >
-                    {board.map((picture) => {
-
-                        return (
-                            <Pic url={picture.url} id={picture.id} />
-                        )
-                    })}
-                </div>
-                <div className='draghai ' >
-                    {
-                        images.map((picture) => {
+                <div className='subdrag'>
+                    <h1>Your Workspace</h1>
+                    <div ref={drop} className='boardhai' >
+                        {board.map((picture) => {
 
                             return (
                                 <Pic url={picture.url} id={picture.id} />
                             )
-                        })
-                    }
+                        })}
+                    </div>
                 </div>
-                
+                <div className='subdrag'>
+                    <h1>Available Agents</h1>
+
+                    <div className='draghai ' >
+                        {
+                            images.map((picture) => {
+
+                                return (
+                                    <Pic url={picture.url} id={picture.id} />
+                                )
+                            })
+                        }
+                    </div>
+                </div>
+
             </div>
         </>
     )

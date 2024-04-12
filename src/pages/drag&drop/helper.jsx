@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Pic from './pic';
+import "./dragdrop.css"
 import { useDrop } from 'react-dnd';
 const images = [
     {
@@ -8,6 +9,14 @@ const images = [
     },
     {
         id: 2,
+        url: "https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg"
+    },
+    {
+        id: 3,
+        url: "https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630"
+    },
+    {
+        id: 4,
         url: "https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg"
     },
     {
@@ -36,8 +45,16 @@ const Helper = () => {
     }
     return (
         <>
-            <div className="dragdrop">
-                <div className='drag' style={{ display: "flex" }}>
+            <div className="dragdrophai">
+            <div ref={drop} className='boardhai' >
+                    {board.map((picture) => {
+
+                        return (
+                            <Pic url={picture.url} id={picture.id} />
+                        )
+                    })}
+                </div>
+                <div className='draghai ' >
                     {
                         images.map((picture) => {
 
@@ -47,14 +64,7 @@ const Helper = () => {
                         })
                     }
                 </div>
-                <div ref={drop} className='board' style={{ border: "20px solid black", height: "600px", width: "500px" }}>
-                    {board.map((picture) => {
-
-                        return (
-                            <Pic url={picture.url} id={picture.id} />
-                        )
-                    })}
-                </div>
+                
             </div>
         </>
     )

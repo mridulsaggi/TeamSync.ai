@@ -10,7 +10,7 @@ const Pic= ({id,url}) => {
     }))
   return (
     <div>
-      <img ref={drag} src={url} alt="img not found" height="300px" width="300px"  style={{border:isDragging?"7px solid black":"0px"}}/>
+      <img ref={drag} src={url} alt="img not found" height="280px" width="280px"  style={{border:isDragging?"7px solid black":"0px",border:"1px solid black",borderRadius:"10px"}}/>
     </div>
   )
 }

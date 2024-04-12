@@ -1,0 +1,11 @@
+.carobody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 30rem; */
+    height: 40rem;
+}
+.carousel-item{
+    margin: 0 2rem;
+    
+}

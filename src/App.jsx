@@ -3,8 +3,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Navbar from './pages/Navbar.jsx'
 import Home from './pages/Home.jsx'
 import Dragdrop from './pages/drag&drop/dragdrop.jsx'
-import Card from "./pages/Card.jsx"
+import { Toaster } from "react-hot-toast"
 
+import Card from "./pages/Card.jsx"
+import Login from "./pages/Login.jsx"
+import Scroll from "./pages/scroll.jsx"
 function App() {
   return (
     <>
@@ -17,9 +20,12 @@ function App() {
           </Routes>
       </Router> */}
       <Navbar/>
+      {/* <Scroll/> */}
+      {/* <Login/> */}
       {/* <Home/> */}
       {/* <Card/> */}
       <Dragdrop/>
+      {/* <Toaster/> */}
     </>
   )
 }

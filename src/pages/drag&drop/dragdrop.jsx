@@ -7,9 +7,7 @@ const Dragdrop = () => {
   return (
     <div>
      <DndProvider backend={HTML5Backend}>
-       <div className="App">
          <Helper />
-       </div>
      </DndProvider>
     </div>
   )

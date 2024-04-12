@@ -1,13 +1,22 @@
-.dragdrop{
+.dragdrophai{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    height: 40rem;
+    margin: 2rem;
 }
-.drag{
-    display: flex;
-    justify-content: center;
-    /* grid-template-rows: 1rem 1rem; */
-    /* column-gap: 2rem; */
-    /* row-gap: 2rem; */
+.draghai{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+.boardhai{
+    border: 3px solid black;
+    border-radius: 30px;
+    height: 35rem;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px;
+
 }

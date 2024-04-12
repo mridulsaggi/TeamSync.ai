@@ -3,21 +3,41 @@ import "./card.css"
 const Card = () => {
 
     return (
-            <div class="row cardhai">
-                <div class="small-7 medium-5 large-4 column end small-centered card">
-                    <div class="card-top"><a href="#0">
-                        </a><img class="card-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/324479/yeti.png" /></div>
-                    <div class="triangle">
-                        <div class="circle-button" id="circleDrop"><img class="close" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/324479/close.svg" /></div>
-                    </div>
-                    <div class="card-middle">
-                        <h5 class="more">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cumque natus delectus praesentium laudantium molestias.</h5>
-                    </div>
-                    {/* <div class="card-bottom text-center">
-                        <h2 class="card-title">Foundation</h2>
-                    </div> */}
+        <div className='cardhai'>
+            
+            <div class="card bg-base-100 shadow-xl">
+                <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title text-center ">
+                        Developer
+                        </h2>
+                    <p>Automate all your development tasks using our specially designed AI developer</p>
+                    
                 </div>
             </div>
+            <div class="card bg-base-100 shadow-xl">
+                <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title text-center ">
+                        Developer
+                        </h2>
+                    <p>Automate all your development tasks using our specially designed AI developer</p>
+                    
+                </div>
+            </div>
+            <div class="card bg-base-100 shadow-xl">
+                <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title text-center ">
+                        Developer
+                        </h2>
+                    <p>Automate all your development tasks using our specially designed AI developer</p>
+                    
+                </div>
+            </div>
+            
+            
+        </div>
     )
 }
 

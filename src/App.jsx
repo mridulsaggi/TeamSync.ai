@@ -8,6 +8,7 @@ import { Toaster } from "react-hot-toast"
 import Card from "./pages/Card.jsx"
 import Login from "./pages/Login.jsx"
 import Scroll from "./pages/scroll.jsx"
+import Managerchat from "./pages/managerchat.jsx"
 function App() {
   return (
     <>
@@ -24,7 +25,8 @@ function App() {
       {/* <Login/> */}
       {/* <Home/> */}
       {/* <Card/> */}
-      <Dragdrop/>
+      {/* <Dragdrop/> */}
+      <Managerchat/>
       {/* <Toaster/> */}
     </>
   )
